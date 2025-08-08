@@ -1,12 +1,13 @@
 :root {
-  --primary-color: #ff914d;
-  --secondary-color: #f5f2fe;
+  --primary-color: #3e4c5c;
+  --secondary-color: #efe7dd;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font: "Cardo", serif;
   --body-font: "Poppins", sans-serif;
 }
 
 body {
+  background-color: var(--secondary-color);
   margin: 0 0 100px auto;
 }
 
