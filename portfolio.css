@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #3e4c5c;
-  --secondary-color: #efe7dd;
+  --primary-color: #527388;
+  --secondary-color: #eeeae6;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font: "Cardo", serif;
   --body-font: "Poppins", sans-serif;
@@ -10,22 +10,15 @@ body {
   background-color: var(--secondary-color);
   margin: 0 0 100px auto;
 }
-
-h1,
-h2,
-h3 {
-  margin: 0;
-}
-
 h1 {
   font-family: var(--heading-font);
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 60px;
 }
 h2 {
   font-family: var(--body-font);
-  font-size: 20px;
+  font-size: 24px;
   margin-top: 15px;
 }
 h3 {
@@ -33,23 +26,26 @@ h3 {
   font-size: 15px;
   opacity: 0.7;
 }
-.text-center {
-  text-align: center;
+.project-description {
+  font-family: var(--body-font);
+  font-size: 18px;
+  line-height: 1.5px;
+  text-align: left;
+  color: #545454;
 }
-
-p {
+.about-paragraph {
   font-family: var(--body-font);
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
+  margin: 60px 20px;
+  color: #545454;
 }
-
 .navigation-links {
   display: flex;
   margin-top: 20px;
   justify-content: center;
 }
-
 .navigation-links a {
   margin: 10px 20px;
   border-radius: 4px;
@@ -57,39 +53,29 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }
-
 .contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
 }
-
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
-
 .homepage-link {
   color: var(--primary-color);
   text-align: center;
   display: block;
 }
-
-.about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-}
-
-.email-link {
+.contact-email {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
   font-size: 28px;
   text-decoration: none;
 }
-
 .email-link:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .app-link {
   display: flex start;
@@ -103,9 +89,31 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
 }
-@media (max-width: 578px) {
-  p {
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: normal;
+    text-align: center;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  .project-description {
     font-size: 15px;
+    padding: 0;
+    text-align: center;
+    line-height: normal;
+  }
+  .about-paragraph {
+    font-size: 15px;
+    line-height: normal;
+    text-align: center;
+    line-height: 20px;
+    margin: 30px 20px;
   }
   .app-link {
     display: flex;
@@ -119,15 +127,6 @@ p {
   .app-heading {
     margin: 3px;
   }
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    text-align: center;
-  }
-  p {
-    text-align: center;
-  }
   br {
     display: none;
   }
@@ -136,9 +135,5 @@ p {
   }
   img #homepage-photos {
     visibility: hidden;
-  }
-}
-@media (min-width: 579px) {
-  img #homepage-photos {
   }
 }
