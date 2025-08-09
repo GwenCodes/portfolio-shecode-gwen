@@ -18,13 +18,16 @@ h1 {
 }
 h2 {
   font-family: var(--body-font);
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 15px;
 }
 h3 {
   font-family: var(--body-font);
-  font-size: 15px;
+  font-size: 20px;
   opacity: 0.7;
+}
+br {
+  margin-bottom: 30px;
 }
 .project-description {
   font-family: var(--body-font);
@@ -38,7 +41,7 @@ h3 {
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
-  margin: 60px 20px;
+  margin: 60px 80px;
   color: #545454;
 }
 .navigation-links {
@@ -53,15 +56,6 @@ h3 {
   text-decoration: none;
   text-transform: capitalize;
 }
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
 .homepage-link {
   color: var(--primary-color);
   text-align: center;
@@ -71,7 +65,7 @@ h3 {
   display: flex;
   justify-content: center;
   color: var(--primary-color);
-  font-size: 28px;
+  font-size: 15px;
   text-decoration: none;
 }
 .email-link:hover {
