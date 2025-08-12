@@ -27,6 +27,9 @@ h3 {
   font-size: 18px;
   opacity: 0.7;
 }
+p {
+  font-family: var(--body-font);
+}
 nav {
   padding: 20px 0;
   margin-bottom: 0;
@@ -42,6 +45,7 @@ nav li {
 }
 nav a {
   font-family: var(--body-font);
+  color: var(--primary-active-button-color);
   opacity: 0.7;
   text-decoration: none;
   transition: all 100ms ease-in-out;
@@ -52,14 +56,11 @@ nav li a:hover {
 .logo {
   max-height: 50px;
 }
-.container li a {
-  color: var(--primary-active-button-color);
-}
-
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
+  margin: 0;
 }
 .content-paragraph {
   font-family: var(--body-font);
