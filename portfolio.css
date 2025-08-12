@@ -1,7 +1,7 @@
 :root {
   --primary-color: #376886;
-  --secondary-color: #eeeae6;
-  --active-button-color: #4caf50;
+  --secondary-color: rgb(238, 234, 230);
+  --active-button-color: rgb(76, 175, 80);
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font: "Cardo", serif;
   --body-font: "Poppins", sans-serif;
@@ -18,6 +18,10 @@ h2 {
   font-size: 20px;
   margin-top: 15px;
 }
+h2 a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
 h3 {
   font-family: var(--body-font);
   font-size: 18px;
@@ -27,10 +31,6 @@ h3 {
   background-color: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
-}
-a {
-  text-decoration: none;
-  opacity: 0.7;
 }
 
 nav {
