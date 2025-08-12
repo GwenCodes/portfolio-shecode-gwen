@@ -45,13 +45,16 @@ nav li {
 .logo {
   max-height: 50px;
 }
+.container li a {
+  color: var(--primary-active-button-color);
+}
+
 nav a {
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
-nav a:hover,
-nav li.active a {
-  color: var(--primary-active-button-color);
+nav li a:hover {
+  color: var(--active-button-color);
 }
 
 .content-paragraph {
@@ -93,11 +96,6 @@ nav li.active a {
   padding: 10px 15px;
   text-decoration: none;
   text-transform: capitalize;
-}
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
 }
 .contact-email {
   display: flex;
