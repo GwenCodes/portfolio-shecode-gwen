@@ -33,10 +33,6 @@ a {
   opacity: 0.7;
 }
 
-.active {
-  color: var(--active-button-color) !important;
-}
-
 nav {
   padding: 20px 0;
 }
@@ -47,7 +43,7 @@ nav li {
   margin-left: 15px;
 }
 .logo {
-  max-height: 40px;
+  max-height: 50px;
 }
 nav a {
   text-decoration: none;
