@@ -29,6 +29,10 @@ h3 {
 }
 nav {
   padding: 20px 0;
+  margin-bottom: 0;
+}
+nav ul {
+  margin-bottom: 0 !important;
 }
 nav li {
   display: inline;
@@ -36,19 +40,22 @@ nav li {
   line-height: 40px;
   margin-left: 50px;
 }
-.logo {
-  max-height: 50px;
-}
-.container li a {
-  color: var(--primary-active-button-color);
-}
 nav a {
+  font-family: var(--body-font);
+  opacity: 0.7;
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
 nav li a:hover {
   color: var(--active-button-color);
 }
+.logo {
+  max-height: 50px;
+}
+.container li a {
+  color: var(--primary-active-button-color);
+}
+
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
