@@ -1,6 +1,7 @@
 :root {
-  --primary-color: #527388;
+  --primary-color: #376886;
   --secondary-color: #eeeae6;
+  --active-button-color: #4caf50;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font: "Cardo", serif;
   --body-font: "Poppins", sans-serif;
@@ -29,6 +30,32 @@ h3 {
 }
 a {
   text-decoration: none;
+  opacity: 0.7;
+}
+
+.active {
+  color: var(--active-button-color) !important;
+}
+
+nav {
+  padding: 20px 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 15px;
+}
+.logo {
+  max-height: 40px;
+}
+nav a {
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--primary-active-button-color);
 }
 
 .content-paragraph {
