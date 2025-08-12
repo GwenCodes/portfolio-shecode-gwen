@@ -17,6 +17,7 @@ h2 {
   font-family: var(--body-font);
   font-size: 30px;
   margin-top: 15px;
+  opacity: 0.7;
 }
 h2 a {
   color: var(--primary-color);
@@ -102,36 +103,31 @@ nav li a:hover {
   text-decoration: none;
   text-transform: capitalize;
 }
-.contact-email {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 15px;
-  text-decoration: none;
-}
-.email-link:hover {
-  text-decoration: none;
-}
+
 .btn-branding {
-  display: flex start;
-  justify-content: center;
-  border-radius: 4px;
-  padding: 10px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+  border-radius: 4px;
+  padding: 12px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 .btn-branding-outline {
-  display: flex start;
-  justify-content: center;
   border: 1px solid var(--primary-color);
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 10px 100px;
   text-decoration: none;
   text-transform: capitalize;
   background: white;
+  color: var(--primary-color);
+  max-width: 200px;
+}
+.btn-branding:hover {
+  background: var(--active-button-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  transition: all 100ms ease-in-out;
 }
 footer {
   margin-top: 60px;
@@ -145,6 +141,7 @@ footer .contact-box {
 footer .contact-box h4 {
   font-family: var(--heading-font);
   font-size: 30px;
+  opacity: 0.8;
 }
 footer .social-links a {
   font-size: 20px;
@@ -159,26 +156,64 @@ footer .social-links a:hover {
   background-color: var(--primary-color);
   transition: all 100ms ease-in-out;
 }
-@media (max-width: 900px) {
+@media (max-width: 780px) {
+  .logo {
+    max-height: 40px;
+  }
+  .hero {
+    padding: 90px 10px;
+    margin: 0;
+  }
+
   h1 {
     font-size: 40px;
+    margin: 8px;
   }
   h2 {
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 10px;
     line-height: normal;
     text-align: center;
-  }
-  h3 {
-    font-size: 12px;
   }
 
+  nav {
+    padding: 10px 0;
+  }
+  .container {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .project-image {
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .profile-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  .project-image img {
+    max-width: 100%;
+    height: auto;
+  }
   .content-paragraph {
     font-size: 15px;
-    line-height: normal;
+    line-height: 1;
     text-align: center;
-    line-height: 20px;
-    margin: 30px 20px;
+    margin: 20px 10px;
+  }
+  .btn-branding,
+  .btn-branding-outline {
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    margin: 10px 100px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
   }
   .app-link {
     display: flex;
@@ -187,7 +222,7 @@ footer .social-links a:hover {
     padding: 7px 7px;
   }
   .app-heading {
-    margin-top: none;
+    margin-top: 0;
   }
   .app-heading {
     margin: 3px;
@@ -195,10 +230,18 @@ footer .social-links a:hover {
   br {
     display: none;
   }
-  img #about-thumbnails {
-    flex-direction: column;
+
+  footer {
+    margin-top: 60px;
   }
-  img #homepage-photos {
-    visibility: hidden;
+  footer .contact-box {
+    padding: 15px 30px;
+    margin: 30px 30px;
+    text-align: center;
+  }
+  footer .contact-box h4 {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
   }
 }
