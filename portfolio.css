@@ -12,24 +12,34 @@ h1 {
   font-size: 60px;
   margin-bottom: 15px;
   margin-top: 15px;
+  color: var(--primary-color);
+  text-align: center;
 }
 h2 {
   font-family: var(--body-font);
   font-size: 30px;
   margin-top: 15px;
   opacity: 0.7;
+  line-height: normal;
+  text-align: center;
 }
 h2 a {
   color: var(--primary-color);
   text-decoration: none;
+  transition: all 100ms ease-in-out;
 }
 h3 {
   font-family: var(--body-font);
   font-size: 18px;
   opacity: 0.7;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 p {
   font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.5;
 }
 nav {
   padding: 20px 0;
@@ -63,6 +73,13 @@ nav li a:hover {
   padding: 160px 20px;
   margin: 0;
 }
+.about-hero {
+  background-color: var(--secondary-color);
+  width: 100%;
+  text-align: center;
+  padding: 30px 160px;
+  margin: 0;
+}
 .content-paragraph {
   font-family: var(--body-font);
   font-size: 16px;
@@ -74,11 +91,11 @@ nav li a:hover {
 .project-image {
   display: flex;
   padding: 20px;
-  margin: 30px auto;
+  margin: 10px auto;
 }
 .profile-image {
-  max-width: 350px;
-  max-height: 350px;
+  max-width: 275px;
+  max-height: 275px;
 }
 .circular-border {
   border: 1px solid #4caf50; /* Circle border color */
@@ -154,6 +171,13 @@ footer .social-links a:hover {
   background-color: var(--primary-color);
   transition: all 100ms ease-in-out;
 }
+.signature {
+  max-width: 70px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 780px) {
   .logo {
     max-height: 40px;
@@ -162,7 +186,11 @@ footer .social-links a:hover {
     padding: 90px 10px;
     margin: 0;
   }
-
+  .about-hero {
+    padding: 30px 50px;
+    margin: 0;
+    text-align: center;
+  }
   h1 {
     font-size: 40px;
     margin: 8px;
@@ -175,7 +203,22 @@ footer .social-links a:hover {
   }
 
   nav {
-    padding: 10px 0;
+    padding: 8px 0;
+  }
+  .logo {
+    max-height: 32px;
+    width: auto;
+  }
+  nav ul {
+    padding-left: 0;
+  }
+  nav li {
+    margin-left: 18px;
+    line-height: 28px;
+  }
+  nav a {
+    font-size: 15px;
+    padding: 4px 0;
   }
   .container {
     text-align: center;
@@ -195,8 +238,8 @@ footer .social-links a:hover {
     height: auto;
   }
   .content-paragraph {
-    font-size: 15px;
-    line-height: 1;
+    font-size: 12px;
+    line-height: 1.4;
     text-align: center;
     margin: 20px 10px;
   }
