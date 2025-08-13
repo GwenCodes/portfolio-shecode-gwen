@@ -70,7 +70,7 @@ nav li a:hover {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 100px 20px;
   margin: 0;
 }
 .about-hero {
@@ -78,7 +78,7 @@ nav li a:hover {
   width: 100%;
   text-align: center;
   padding: 30px 160px;
-  margin: 0;
+  margin: 20px 0;
 }
 .content-paragraph {
   font-family: var(--body-font);
