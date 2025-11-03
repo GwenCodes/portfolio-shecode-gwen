@@ -7,7 +7,11 @@
   --heading-font: "Cardo", serif;
   --body-font: "Poppins", sans-serif;
 }
-
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 /* Typography */
 h1 {
   font-family: var(--heading-font);
@@ -37,6 +41,13 @@ h3 {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
+}
+h4 {
+  font-family: var(--body-font);
+  font-size: 30px;
+  opacity: 0.7;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 p {
   font-family: var(--body-font);
@@ -87,10 +98,10 @@ nav li a:hover {
   margin: 20px 0;
 }
 .content-paragraph {
-  font-family: var(--body-font);
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
+  margin-left: 10px;
   color: #545454;
 }
 
@@ -130,28 +141,35 @@ nav li a:hover {
 }
 
 /* Buttons */
+.btn-branding,
+.btn-branding-outline {
+  text-align: center;
+  border-radius: 4px;
+  margin: 10px auto;
+  transition: all 100ms ease-in-out;
+}
+
 .btn-branding {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
-  border-radius: 4px;
-  padding: 15px 20px;
+}
+.btn-launch-app {
+  display: block;
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 180px;
+  width: 100%;
 }
 .btn-branding-outline {
   border: 1px solid var(--primary-color);
-  border-radius: 4px;
-  padding: 15px 20px;
   background: white;
   color: var(--primary-color);
-  max-width: 200px;
-  text-decoration: none;
 }
+
 .btn-branding:hover {
   background: var(--active-button-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-  transition: all 100ms ease-in-out;
-  text-decoration: none;
 }
 
 /* Footer */
@@ -193,7 +211,7 @@ footer .social-links a:hover {
 }
 
 /* Responsive Styles */
-@media (max-width: 780px) {
+@media (max-width: 600px) {
   .logo {
     max-height: 40px;
   }
@@ -261,15 +279,9 @@ footer .social-links a:hover {
   .btn-branding-outline {
     display: block;
     text-align: center;
-    border-radius: 4px;
-    margin: 10px 100px;
-    text-decoration: none;
-    text-transform: capitalize;
-    padding: 10px 15px;
-    background: var(--primary-color);
-    box-shadow: var(--box-shadow);
-    color: white;
+    font-size: 0.9rem;
   }
+
   .app-link {
     display: flex;
     margin: auto;
