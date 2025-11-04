@@ -53,8 +53,8 @@ p {
   font-family: var(--body-font);
   font-size: 14px;
   line-height: 1.5;
+  margin: 10px 0;
 }
-
 /* Navigation */
 nav {
   padding: 20px 0;
@@ -110,6 +110,10 @@ nav li a:hover {
   max-width: 100%;
   height: auto;
 }
+.shadow-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* soft shadow */
+}
+
 .project-image {
   display: flex;
   padding: 20px;
