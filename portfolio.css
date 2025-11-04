@@ -43,7 +43,7 @@ h3 {
   text-align: center;
 }
 h4 {
-  font-family: var(--body-font);
+  font-family: var(--heading-font);
   font-size: 30px;
   opacity: 0.7;
   margin-top: 10px;
@@ -51,7 +51,7 @@ h4 {
 }
 p {
   font-family: var(--body-font);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -98,7 +98,7 @@ nav li a:hover {
   margin: 20px 0;
 }
 .content-paragraph {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   text-align: left;
   margin-left: 10px;
@@ -160,7 +160,7 @@ nav li a:hover {
 }
 .btn-launch-app {
   display: block;
-  margin-top: 90px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   max-width: 180px;
@@ -215,7 +215,7 @@ footer .social-links a:hover {
 }
 
 /* Responsive Styles */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .logo {
     max-height: 40px;
   }
@@ -284,6 +284,12 @@ footer .social-links a:hover {
     display: block;
     text-align: center;
     font-size: 0.9rem;
+  }
+  .btn-launch-app {
+    max-width: 130px;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.85rem !important;
+    margin-top: 30px;
   }
 
   .app-link {
