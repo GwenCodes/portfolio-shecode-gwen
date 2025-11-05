@@ -33,7 +33,7 @@ h1 {
 
 h2 {
   font-family: var(--body-font);
-  font-size: 30px;
+  font-size: 25px;
   margin-top: 15px;
   opacity: 0.7;
   line-height: normal;
@@ -198,6 +198,11 @@ nav li a:hover {
   max-width: 100%;
   height: auto;
 }
+.block img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .shadow-img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -218,15 +223,18 @@ nav li a:hover {
 
 .gradient-border {
   display: inline-block;
-  padding: 1px;
+  padding: 4px;
   border-radius: 50%;
   background: linear-gradient(
     45deg,
     #ffffff,
-    #2f3a48,
+    #717171,
+    #717171,
     #fdfdfd,
-    #587291,
-    #ffffff
+    #fdfdfd,
+    #717171,
+    #717171,
+    #d3d3d3
   );
 }
 
