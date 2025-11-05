@@ -98,7 +98,7 @@ nav li a:hover {
   margin: 20px 0;
 }
 .content-paragraph {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   text-align: left;
   margin-left: 10px;
@@ -242,6 +242,9 @@ footer .social-links a:hover {
     line-height: normal;
     text-align: center;
   }
+  h3 {
+    font-size: 16px;
+  }
   nav {
     padding: 8px 0;
   }
@@ -257,12 +260,17 @@ footer .social-links a:hover {
     line-height: 28px;
   }
   nav a {
-    font-size: 15px;
+    font-size: 14px;
     padding: 4px 0;
   }
   .container {
     text-align: center;
     margin: 0 auto;
+  }
+  .content-paragraph {
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
   }
   .project-image {
     flex-direction: column;
@@ -278,7 +286,7 @@ footer .social-links a:hover {
     height: auto;
   }
   .content-paragraph {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.4;
     text-align: center;
     margin: 20px 10px;
@@ -287,12 +295,12 @@ footer .social-links a:hover {
   .btn-branding-outline {
     display: block;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 16px;
   }
   .btn-launch-app {
     max-width: 130px;
     padding: 0.25rem 0.5rem !important;
-    font-size: 0.85rem !important;
+    font-size: 16px !important;
     margin-top: 30px;
   }
 
