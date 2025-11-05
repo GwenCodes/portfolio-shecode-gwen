@@ -1,4 +1,6 @@
-/* Variables */
+/* ==========================================================================
+   CSS Variables
+   ========================================================================== */
 :root {
   --primary-color: #587291;
   --secondary-color: rgb(238, 234, 230);
@@ -7,12 +9,19 @@
   --heading-font: "Cardo", serif;
   --body-font: "Poppins", sans-serif;
 }
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
 .container {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
-/* Typography */
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 h1 {
   font-family: var(--heading-font);
   font-size: 60px;
@@ -21,6 +30,7 @@ h1 {
   color: var(--primary-color);
   text-align: center;
 }
+
 h2 {
   font-family: var(--body-font);
   font-size: 30px;
@@ -29,11 +39,13 @@ h2 {
   line-height: normal;
   text-align: center;
 }
+
 h2 a {
   color: var(--primary-color);
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
+
 h3 {
   font-family: var(--body-font);
   font-size: 18px;
@@ -42,27 +54,27 @@ h3 {
   margin-bottom: 10px;
   text-align: center;
 }
-h4 {
-  font-family: var(--heading-font);
-  font-size: 30px;
-  opacity: 0.7;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 p {
   font-family: var(--body-font);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   margin: 10px 0;
+  color: #545454;
 }
-/* Navigation */
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
 nav {
   padding: 20px 0;
   margin-bottom: 0;
 }
+
 nav ul {
   margin-bottom: 0 !important;
 }
+
 nav li {
   display: inline;
   list-style: none;
@@ -70,76 +82,28 @@ nav li {
   margin-left: 50px;
   opacity: 0.7;
 }
+
 nav a {
   font-family: var(--body-font);
   color: var(--primary-active-button-color);
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
+
 nav li a:hover {
   color: var(--active-button-color);
 }
+
 .logo {
   max-height: 50px;
 }
 
-/* Hero & About */
-.hero {
-  background-color: var(--secondary-color);
-  text-align: center;
-  padding: 100px 20px;
-  margin: 0;
-}
-.about-hero {
-  background-color: var(--secondary-color);
-  width: 100%;
-  text-align: center;
-  padding: 30px 160px;
-  margin: 20px 0;
-}
-.content-paragraph {
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: left;
-  margin-left: 10px;
-  color: #545454;
-}
-
-/* Images */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-.shadow-img {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* soft shadow */
-}
-
-.project-image {
-  display: flex;
-  padding: 20px;
-  margin: 10px auto;
-}
-.profile-image {
-  max-width: 275px;
-  max-height: 275px;
-}
-.circular-border {
-  border: 1px solid #4caf50;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  vertical-align: middle;
-  margin: 50px auto;
-}
-
-/* Navigation Links */
 .navigation-links {
   display: flex;
   margin-top: 20px;
   justify-content: center;
 }
+
 .navigation-links a {
   margin: 10px 20px;
   border-radius: 4px;
@@ -148,7 +112,9 @@ nav li a:hover {
   text-transform: capitalize;
 }
 
-/* Buttons */
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
 .btn-branding,
 .btn-branding-outline {
   text-align: center;
@@ -162,6 +128,17 @@ nav li a:hover {
   box-shadow: var(--box-shadow);
   color: white;
 }
+
+.btn-branding:hover {
+  background: var(--active-button-color);
+}
+
+.btn-branding-outline {
+  border: 1px solid var(--primary-color);
+  background: white;
+  color: var(--primary-color);
+}
+
 .btn-launch-app {
   display: block;
   margin-top: 50px;
@@ -170,21 +147,105 @@ nav li a:hover {
   max-width: 180px;
   width: 100%;
 }
-.btn-branding-outline {
-  border: 1px solid var(--primary-color);
-  background: white;
-  color: var(--primary-color);
+
+/* ==========================================================================
+   Layout Sections
+   ========================================================================== */
+
+/* Hero & About */
+.hero {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 50px 20px;
+  margin: 0;
 }
 
-.btn-branding:hover {
-  background: var(--active-button-color);
+.content-paragraph {
+  padding: 0 24px;
+  margin: 20px auto;
+  max-width: 540px;
 }
 
-/* Footer */
+.about-paragraph {
+  padding: 0 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Profile Section */
+.profile-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-text {
+  font-family: var(--body-font);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #545454;
+  text-align: start;
+}
+
+/* ==========================================================================
+   Images
+   ========================================================================== */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.shadow-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  display: flex;
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.gradient-border {
+  display: inline-block;
+  padding: 1px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    #ffffff,
+    #2f3a48,
+    #fdfdfd,
+    #587291,
+    #ffffff
+  );
+}
+
+.profile-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 footer {
   margin-top: 60px;
   align-items: center;
 }
+
 footer .contact-box {
   background-color: var(--secondary-color);
   width: 100%;
@@ -210,6 +271,13 @@ footer .social-links a:hover {
   background-color: var(--primary-color);
   transition: all 100ms ease-in-out;
 }
+footer h4 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .signature {
   max-width: 70px;
   margin: 0 auto;
@@ -218,85 +286,106 @@ footer .social-links a:hover {
   align-items: center;
 }
 
-/* Responsive Styles */
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Mobile Styles */
 @media (max-width: 576px) {
-  .logo {
-    max-height: 40px;
-  }
-  .hero {
-    padding: 90px 10px;
-    margin: 0;
-  }
-  .about-hero {
-    padding: 30px 50px;
-    margin: 0;
-    text-align: center;
-  }
+  /* Typography */
   h1 {
     font-size: 40px;
     margin: 8px;
   }
+
   h2 {
     font-size: 18px;
     margin-top: 10px;
     line-height: normal;
     text-align: center;
   }
+
   h3 {
     font-size: 16px;
   }
+
+  br {
+    display: none;
+  }
+
+  /* Navigation */
   nav {
     padding: 8px 0;
   }
-  .logo {
-    max-height: 32px;
-    width: auto;
-  }
+
   nav ul {
     padding-left: 0;
   }
+
   nav li {
     margin-left: 18px;
     line-height: 28px;
   }
+
   nav a {
     font-size: 14px;
     padding: 4px 0;
   }
+
+  .logo {
+    max-height: 32px;
+    width: auto;
+  }
+
+  /* Layout */
   .container {
     text-align: center;
     margin: 0 auto;
   }
-  .content-paragraph {
-    font-size: 14px;
-    line-height: 1;
+
+  .hero {
+    padding: 90px 10px;
+    margin: 0;
+  }
+
+  .about-hero {
+    padding: 30px 50px;
+    margin: 0;
     text-align: center;
   }
+
+  .content-paragraph {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 24px;
+    max-width: 540px;
+  }
+
+  /* Images */
+  .profile-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
   .project-image {
     flex-direction: column;
     padding: 10px;
     margin: 0 auto;
   }
-  .profile-image {
-    max-width: 200px;
-    max-height: 200px;
-  }
+
   .project-image img {
     max-width: 100%;
     height: auto;
   }
-  .content-paragraph {
-    font-size: 14px;
-    line-height: 1.4;
-    text-align: center;
-    margin: 20px 10px;
-  }
+
+  /* Buttons */
   .btn-branding,
   .btn-branding-outline {
     display: block;
     text-align: center;
     font-size: 16px;
   }
+
   .btn-launch-app {
     max-width: 130px;
     padding: 0.25rem 0.5rem !important;
@@ -310,30 +399,40 @@ footer .social-links a:hover {
     max-width: 200px;
     padding: 7px 7px;
   }
+
   .app-heading {
     margin-top: 0;
     margin: 3px;
   }
-  br {
-    display: none;
-  }
+
+  /* Footer */
   footer {
     margin-top: 60px;
   }
+
   footer .contact-box {
     padding: 30px 30px;
-    margin: 30px 30px;
-    text-align: center;
     margin: 0;
+    text-align: center;
   }
+
   footer .contact-box h4 {
     padding: 10px;
     font-size: 20px;
     text-align: center;
   }
+
   .signature {
     margin-top: 10px;
     font-size: 10px;
     max-height: 6px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  .profile-image {
+    max-width: 200px;
+    max-height: 200px;
   }
 }
