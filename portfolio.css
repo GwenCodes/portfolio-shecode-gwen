@@ -156,7 +156,8 @@ nav li a:hover {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 50px 20px;
+  background-size: cover;
+  padding: 125px 20px;
   margin: 0;
 }
 
@@ -179,8 +180,15 @@ nav li a:hover {
   gap: 2rem;
   align-items: center;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 20px;
+}
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    justify-items: center; /* horizontally center each item */
+    text-align: center; /* center text inside text blocks */
+  }
 }
 
 .profile-text {
@@ -222,7 +230,7 @@ nav li a:hover {
 
 .gradient-border {
   display: inline-block;
-  padding: 4px;
+  padding: 3px;
   border-radius: 50%;
   background: linear-gradient(
     45deg,
@@ -256,7 +264,7 @@ footer {
 footer .contact-box {
   background-color: var(--secondary-color);
   width: 100%;
-  padding: 60px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -355,12 +363,6 @@ footer h4 {
     margin: 0;
   }
 
-  .about-hero {
-    padding: 30px 50px;
-    margin: 0;
-    text-align: center;
-  }
-
   .content-paragraph {
     font-size: 15px;
     line-height: 1.5;
@@ -417,16 +419,9 @@ footer h4 {
     margin-top: 60px;
   }
 
-  footer .contact-box {
-    padding: 30px 30px;
-    margin: 0;
-    text-align: center;
-  }
-
   footer .contact-box h4 {
-    padding: 10px;
+    padding: 20px;
     font-size: 20px;
-    text-align: center;
   }
 
   .signature {
