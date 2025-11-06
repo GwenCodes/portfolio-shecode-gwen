@@ -29,7 +29,7 @@
 /* Base Container */
 .container {
   width: 100%;
-  margin: 0 0 0 30px;
+  margin: 0 auto;
   padding-right: 0;
 }
 
@@ -367,6 +367,7 @@ footer .social-links a:hover {
 /* Mobile Styles (max-width: 576px) */
 @media (max-width: 576px) {
   /* Typography */
+
   h1 {
     font-size: 40px;
     margin: 8px;
