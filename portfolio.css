@@ -20,6 +20,7 @@
   /* Typography */
   --heading-font: "Cardo", serif;
   --body-font: "Poppins", sans-serif;
+  --quote-font: "playfair display", serif;
 
   /* Effects */
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -65,7 +66,7 @@ h3 {
 h4 {
   font-family: var(--body-font);
   font-size: 35px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* Body Text */
@@ -217,12 +218,6 @@ nav li a:hover {
   max-width: 540px;
 }
 
-.about-paragraph {
-  padding: 0 20px;
-  margin: 20px auto;
-  max-width: 800px;
-}
-
 /* Profile Section */
 .profile-grid {
   display: grid;
@@ -315,6 +310,33 @@ nav li a:hover {
 }
 
 /* ==========================================================================
+   About Page
+   ========================================================================== */
+.about-paragraph .quote {
+  font-family: var(--quote-font);
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: left;
+}
+.about-paragraph p {
+  padding: 0 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+@media (max-width: 768px) {
+  .profile-grid {
+    padding: 20px; /* add mobile padding */
+    text-align: center; /* center text on mobile */
+    justify-items: center;
+  }
+  .about-paragraph .quote {
+    text-align: center; /* center quote on mobile */
+    font-size: 30px;
+  }
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 footer {
@@ -337,8 +359,8 @@ footer p {
   padding: 10px;
 }
 footer h4 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+  font-family: "playfair display", serif;
+  color: #212a36;
   font-size: 30px;
 }
 
