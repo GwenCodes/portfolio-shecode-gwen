@@ -1,0 +1,509 @@
+/* ==========================================================================
+   CSS Reset & Base Styles
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Properties (CSS Variables) */
+:root {
+  /* Colors */
+  --primary-color: #4f6683;
+  --secondary-color: rgb(238, 234, 230);
+  --active-button-color: rgb(76, 175, 80);
+  --text-color: #545454;
+
+  /* Typography */
+  --heading-font: "Cardo", serif;
+  --body-font: "Poppins", sans-serif;
+
+  /* Effects */
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --transition-speed: 100ms;
+}
+
+/* Base Container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 60px;
+  color: var(--primary-color);
+}
+
+h2 {
+  font-family: var(--body-font);
+  font-size: 25px;
+  line-height: normal;
+  opacity: 0.7;
+}
+h3 {
+  font-family: var(--body-font);
+  font-size: 18px;
+  opacity: 0.7;
+}
+h4 {
+  font-family: var(--body-font);
+  font-size: 35px;
+  opacity: 0.7;
+}
+
+/* Body Text */
+p {
+  font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+  margin-left: 60px;
+  color: var(--text-color);
+}
+
+/* Lists */
+ul {
+  margin: 0;
+  padding-right: 0;
+  list-style: none;
+}
+.tech-stack {
+  margin-left: 0;
+  padding-left: 0;
+}
+ul li {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Typography Responsive Adjustments */
+@media (max-width: 992px) {
+  ul li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  ul li {
+    font-size: 14px;
+  }
+}
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Primary Navigation */
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+nav li {
+  display: inline;
+  line-height: 40px;
+  margin-left: 50px;
+  opacity: 0.7;
+}
+
+nav a {
+  font-family: var(--body-font);
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+nav li a:hover {
+  color: var(--active-button-color);
+}
+
+/* Logo */
+.logo {
+  max-height: 50px;
+  width: auto;
+}
+
+/* Secondary Navigation */
+.navigation-links {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 10px 20px;
+  border-radius: 4px;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+.btn-branding,
+.btn-branding-outline {
+  text-align: center;
+  border-radius: 4px;
+  margin: 10px auto;
+  transition: all 100ms ease-in-out;
+}
+
+.btn-branding {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.btn-branding:hover {
+  background: var(--active-button-color);
+}
+
+.btn-branding-outline {
+  border: 1px solid var(--primary-color);
+  background: white;
+  color: var(--primary-color);
+}
+
+.btn-launch-app {
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 180px;
+  width: 100%;
+}
+
+/* ==========================================================================
+   Layout Sections
+   ========================================================================== */
+
+/* Hero & About */
+.hero {
+  background-color: var(--secondary-color);
+  text-align: center;
+  background-size: cover;
+  padding: 125px 20px;
+  margin: 0;
+}
+
+.content-paragraph {
+  padding: 0 24px;
+  margin: 20px auto;
+  max-width: 540px;
+}
+
+.about-paragraph {
+  padding: 0 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Profile Section */
+.profile-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+    justify-items: center; /* horizontally center each item */
+    text-align: center; /* center text inside text blocks */
+  }
+}
+
+.profile-text {
+  font-family: var(--body-font);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #545454;
+  text-align: start;
+}
+/* ==========================================================================
+   Images
+   ========================================================================== */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.block img {
+  max-width: 275px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.block a {
+  color: rgb(33, 37, 41);
+  font-family: var(--body-font);
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+.block a:hover {
+  color: var(--active-button-color);
+}
+
+.shadow-img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  display: flex;
+  margin: 10px auto;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.gradient-border {
+  display: inline-block;
+  padding: 3px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    #ffffff,
+    #717171,
+    #717171,
+    #fdfdfd,
+    #fdfdfd,
+    #717171,
+    #717171,
+    #d3d3d3
+  );
+}
+
+.profile-image {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+  margin-top: 60px;
+  align-items: center;
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  padding: 10px;
+}
+footer h4 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  font-size: 30px;
+}
+
+.social-links a {
+  font-size: 20px;
+  margin: 0 20px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+
+.social-links a:hover {
+  color: white;
+  background-color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+}
+
+.signature {
+  max-width: 70px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Mobile Styles (max-width: 576px) */
+@media (max-width: 600px) {
+  /* Typography */
+
+  h1 {
+    font-size: 40px;
+    margin: 8px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 23px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .content-paragraph {
+    font-size: 15px;
+    padding: 0 24px;
+  }
+
+  /* Navigation */
+  nav {
+    margin-right: 20px;
+    padding-right: 10px;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+
+  nav li {
+    margin-left: 18px;
+    line-height: 28px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+
+  .logo {
+    max-height: 32px;
+    margin-left: 20px;
+  }
+
+  /* Layout & Containers */
+
+  .hero {
+    padding: 90px 10px;
+  }
+
+  /* Images & Media */
+  .profile-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .project-image {
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  /* Buttons & Interactive Elements */
+  .btn-branding,
+  .btn-branding-outline {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .btn-launch-app {
+    max-width: 130px;
+    padding: 0.25rem 0.5rem !important;
+    font-size: 16px !important;
+    margin-top: 30px;
+  }
+
+  .app-link {
+    display: flex;
+    margin: auto;
+    max-width: 200px;
+    padding: 7px;
+  }
+
+  .app-heading {
+    margin: 3px;
+  }
+
+  /* Footer Adjustments */
+  footer .contact-box {
+    padding: 30px;
+  }
+
+  footer h4 {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .signature {
+    margin-top: 10px;
+    font-size: 10px;
+    max-height: 6px;
+  }
+}
+
+/* Tablet Styles (max-width: 768px) */
+@media (max-width: 600px) {
+  .about-paragraph p {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+/* Desktop Styles (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .profile-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}

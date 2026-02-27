@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-shecode-gwen",
+  "version": "1.0.0",
+  "description": "Static portfolio site",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -l 5000",
+    "build": "echo 'No build step required for static site'"
+  },
+  "author": "GwenCodes",
+  "license": "MIT"
+}
