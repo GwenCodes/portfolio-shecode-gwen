@@ -4,8 +4,12 @@
   "description": "Static portfolio site",
   "main": "index.html",
   "scripts": {
+<<<<<<< HEAD
     "start": "npx serve . -l 5000",
     "build": "echo 'No build step required for static site'"
+=======
+    "start": "npx serve -s . -l 5000"
+>>>>>>> 818e71bed6f964817a2c939c0affd68342f4bb52
   },
   "author": "GwenCodes",
   "license": "MIT"
